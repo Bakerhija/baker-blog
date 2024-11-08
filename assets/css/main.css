@@ -1,0 +1,149 @@
+@import url('colors.css');
+@import url('typography.css');
+@import url('layout.css');
+@import url('components.css');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background-color: var(--card-background-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.post-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-card h2 {
+    margin: 15px;
+    font-size: 1.5em;
+}
+
+.post-card p {
+    margin: 0 15px 15px;
+    font-size: 1em;
+}
+
+.post-card button {
+    display: block;
+    margin: 0 15px 15px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.post-card button:hover {
+  background-color: #FF5733; 
+  color: #FFFFFF;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.color-swatch {
+    padding: 15px;
+    color: var(--text-color);
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.primary-color {
+    background: var(--primary-color);
+}
+
+.secondary-color {
+    background: var(--secondary-color);
+}
+
+.background-color {
+    background: var(--background-color);
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.elevated-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filled-card {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.outlined-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
