@@ -43,25 +43,6 @@
   margin-top: 10px;
 }
 
-
-figure {
-  border: thin #c0c0c0 solid;
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  margin: auto;
-}
-
-
-figcaption {
-  background-color: var(--secondary-color);
-  color: #fff;
-  font: italic smaller sans-serif;
-  padding: 3px;
-  text-align: center;
-}
-
-
 body {
   font-size: 14px;
   padding: 10px;
@@ -87,3 +68,18 @@ body {
   }
 }
 
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
